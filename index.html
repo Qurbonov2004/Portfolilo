@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+    <header style="background-color:blanchedalmond" >
+        <h1 style="color: black;">Portfolio Me</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">My hobbies</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#proyekt">Projects</a></li>
+                <li><a href="#contact" class="contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="about">
+        <h1>Hi! I'm Qurbonov Omadbek, a Back-End Developer</h1>
+        <p>I'm from  Uzbekistan , Fergana. I’m crafting solutions with a clean, 
+            efficient, and purpose-driven coding mindset,
+             always inspired by a sense of growth and sharing knowledge.</p>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2>My hobbies</h2>
+        <div class="card" style="background-color: #007BFF;">
+            <img src="./images/leetcodeh.jpg" alt="Sendpay">
+            <h3>Solving Problem</h3>
+        </div>
+        <div class="card" style="background-color: #007BFF;;">
+            <img src="./images/w3schools.jpg" alt="E-commerce">
+            <h3>Learn new skills</h3>
+        </div>
+        <div class="card" style="background-color: #007BFF;">
+            <img src="./images/ches.jpg" alt="Postal Learning">
+            <h3>Playing chess</h3>
+        </div>
+    </section>
+
+    <section class="portfolio" id="skills">
+        <h2>Additional Passions</h2>
+        <div class="card" style="background-color: #28a745;">
+            <img src="./images/bk.png" alt="Sendpay">
+            <h2>Back-End</h2>
+            <h3>Django,Python,Java</h3>
+        </div>
+        <div class="card" style="background-color: #28a745;">
+            <img src="./images/css.jpg" alt="E-commerce">
+            <h2>Front-End</h2>
+            <h3>Html,Css,Js</h3>
+        </div>
+        <div class="card" style="background-color: #28a745;">
+            <img src="./images/sql.png" alt="Postal Learning">
+            <h2>Database</h2>
+            <h3>PostgreSql,MySql</h3>
+        </div>
+    </section>
+
+    <section class="portfolio" id="proyekt">
+        <h2>My Portfolio</h2>
+        <a href="https://github.com/Qurbonov2004/Quiz" >
+        <div class="card" style="background-color: #6c757d;;">
+            <img src="./images/11zon_resized.jpg" alt="Sendpay">
+            <h3>Quiz Test</h3>
+        </div>
+    </a>
+    <a href="https://github.com/Qurbonov2004/shops" >
+        <div class="card" style="background-color: #6c757d;">
+            <img src="./images/online.jpg" alt="E-commerce">
+            <h3>Online shop</h3>
+        </div>
+    </a>
+
+    
+    <a href="https://github.com/Cbekoder/HelpNurseBot">
+        <div class="card" style="background-color: #6c757d;">
+            <img src="./images/nurcehelp.jpg" alt="Postal Learning">
+            <h3>HElpNurceBot</h3>
+        </div>
+    </a>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-icons">
+            <a href="https://github.com/Qurbonov2004"  target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/omadbek0402/"  target="_blank">Instagram</a>
+            <a href="mailto:dasturchi0204@gmail.com"  target="_blank">Email</a>
+            <a href="tel:+998901234567"  target="_blank">Phone</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Design by Omadbek</p>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
